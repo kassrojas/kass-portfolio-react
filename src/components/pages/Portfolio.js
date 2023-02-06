@@ -1,12 +1,13 @@
 import React from 'react';
+import Project from '../Project';
 
 export default function Portfolio(){
     return (
-        <div>
+        <>
+        <main>
             <h1> Portfolio </h1>
-            <ul>
-                {/* {Project.map(item => <li> {item}</li>)} */}
-            </ul>
-        </div>
+        < Project />
+        </main>
+        </>
     )
 }

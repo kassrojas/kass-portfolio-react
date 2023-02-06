@@ -1,8 +1,9 @@
 import React from 'react';
 
-function NavTabs({ currentPage, handlePageChange, pages }) {
+function Navigation({ currentPage, handlePageChange, pages }) {
   return (
-    <ul className="nav nav-tabs">
+    <nav>
+    <ul className="nav nav-tabs p-2">
       {pages.map(page => (
         <li key={page} className="nav-item">
           <a
@@ -15,7 +16,8 @@ function NavTabs({ currentPage, handlePageChange, pages }) {
       </li>
       ))}
     </ul>
+    </nav>
   );
 }
 
-export default NavTabs;
+export default Navigation;
