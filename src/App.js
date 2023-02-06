@@ -1,10 +1,10 @@
 import React from 'react'; 
-
+import Homepage from './components/Homepage';
 
 function App() {
-  return (
-    <h1 className='m-3'>Hello World!</h1>
-  )
+   return (
+        <Homepage />
+   ); 
 };
 
 export default App;
