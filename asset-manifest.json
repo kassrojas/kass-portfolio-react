@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kass-portfolio-react/static/css/main.fb8eceec.css",
+    "main.js": "/kass-portfolio-react/static/js/main.f4085808.js",
+    "index.html": "/kass-portfolio-react/index.html",
+    "main.fb8eceec.css.map": "/kass-portfolio-react/static/css/main.fb8eceec.css.map",
+    "main.f4085808.js.map": "/kass-portfolio-react/static/js/main.f4085808.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb8eceec.css",
+    "static/js/main.f4085808.js"
+  ]
+}
