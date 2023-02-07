@@ -64,7 +64,7 @@ export default function Portfolio() {
     []
   );
   return (
-    <div className="m-2 vh-100">
+    <div className="m-2 min-vh-100">
       <h1 className="text-center p-2"> Portfolio </h1>
       <ProjectList apps={apps} heading="Projects" />
     </div>

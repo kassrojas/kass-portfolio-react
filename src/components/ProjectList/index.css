@@ -2,10 +2,3 @@ img {
     height: 100%;
     width: 100%;
 }
-
-/* screens that are larger than 992px */
-@media screen and (min-width: 900px ) {
-    .card {
-        width: 50%;
-    }
-}

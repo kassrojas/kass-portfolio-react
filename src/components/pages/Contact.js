@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <>
-      <section className="vh-100">
+      <section className="min-vh-100">
         <h1 className="text-center p-2"> Contact Me </h1>
         <form className="p-2 m-2">
           <div>

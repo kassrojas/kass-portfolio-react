@@ -1,16 +1,8 @@
 import React, { useState } from "react";
 import Navigation from "../Navigation";
-import pageComponents from "../pages";
 import "./index.css";
 
-const pages = Object.keys(pageComponents);
-
-export default function Header() {
-  const [currentPage, setCurrentPage] = useState("About");
-
-  const Page = () => pageComponents[currentPage]();
-  const handlePageChange = (page) => setCurrentPage(page);
-
+export default function Header({ handlePageChange, pages, currentPage }) {
   return (
     <>
       <header className="header">
@@ -21,7 +13,6 @@ export default function Header() {
           pages={pages}
         />
       </header>
-      <Page className="m-3 p-2 d-flex container vh-100" />
     </>
   );
 }
