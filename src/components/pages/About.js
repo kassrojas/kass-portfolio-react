@@ -10,13 +10,13 @@ const styles = {
 
 export default function About() {
   return (
-    <section>
-      <div className="row">
+    <>
+      <div className="row m-2 p-3 bg-info">
         <h1 className="text-center"> About Me </h1>
       </div>
-      <div className="row">
+      <div className="row m-2 p-3 bg-success">
         <img src={myself} alt="me" style={styles.myimg} className="col-auto" />
-        <p className="col-auto">
+        <p className="col">
           Hello! <br />
           My name is Kass and I am a recent graduate from UNC Charlotte's Full
           Stack Web Development bootcamp! <br /> I was born in Mexico and raised
@@ -29,6 +29,6 @@ export default function About() {
           romantic science fiction novels, and powerlifting in my garage gym.
         </p>
       </div>
-    </section>
+    </>
   );
 }

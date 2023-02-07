@@ -2,10 +2,14 @@ import React from "react";
 
 const styles = {
   footer: {
-    // height: 100,
     margin: "auto",
     text: "black",
     background: "beige",
+    // padding: "2rem",
+    position: "absolute",
+    bottom: "0",
+    width: "100%",
+    height: "2.5 rem",
   },
 };
 

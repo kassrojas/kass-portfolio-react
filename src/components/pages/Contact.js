@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <>
       <section className="vh-100">
-        <h1> Contact Me </h1>
+        <h1 className="text-center p-2"> Contact Me </h1>
         <form className="p-2 m-2">
           <div>
             <label for="nameInput" className="form-label">

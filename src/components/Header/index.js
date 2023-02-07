@@ -21,9 +21,7 @@ export default function Header() {
           pages={pages}
         />
       </header>
-      <section className="m-3 p-2 d-flex container vh-100" id="pageSection">
-        <Page />
-      </section>
+      <Page className="m-3 p-2 d-flex container vh-100" />
     </>
   );
 }
