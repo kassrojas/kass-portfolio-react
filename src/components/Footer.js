@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 
 const styles = {
   footer: {
@@ -6,14 +7,27 @@ const styles = {
     text: "black",
     background: "beige",
     width: "100%",
-    height: "2.5 rem",
+    display: "flex",
+    justifyContent: "center",
+  },
+  a: {
+    fontSize: 75,
+    margin: 2,
   },
 };
 
 export default function Footer() {
   return (
     <footer style={styles.footer}>
-      <h5> Footer </h5>
+      <a>
+        <FaGithub style={styles.a} />
+      </a>
+      <a>
+        <FaLinkedin style={styles.a} />
+      </a>
+      <a>
+        <FaInstagramSquare style={styles.a} />
+      </a>
     </footer>
   );
 }
