@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    background-color: beige;
+    padding: 1rem;
+}
+
+.name {
+    margin: 2rem;
+    padding: 2rem;
+}
