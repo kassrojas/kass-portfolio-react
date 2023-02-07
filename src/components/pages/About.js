@@ -1,5 +1,5 @@
 import React from "react";
-import myself from "../../images/self.jpeg";
+import myself from "../../assets/images/self.jpeg";
 
 const styles = {
   myimg: {
