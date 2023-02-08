@@ -33,7 +33,7 @@ export default function Resume() {
               rel="noreferrer"
               style={styles.shadow}
             >
-              <img src={resumeImg} alt="resume image" style={styles.img} />
+              <img src={resumeImg} alt="resume" style={styles.img} />
             </a>
           </div>
         </div>

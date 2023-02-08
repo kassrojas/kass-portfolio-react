@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./index.css";
 
 export default function ProjectList({ apps, heading }) {
@@ -11,7 +11,7 @@ export default function ProjectList({ apps, heading }) {
             <div className="card m-2">
               <section key={app.id} className="card-body">
                 <h3 className="card-title">{app.title}</h3>
-                <img src={app.img} alt="app image" />
+                <img src={app.img} alt="application screenshot" />
                 <p className="card-text p-2">{app.body}</p>
                 <a
                   href={app.deployed}
