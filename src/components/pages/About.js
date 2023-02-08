@@ -16,7 +16,7 @@ const styles = {
 export default function About() {
   return (
     <>
-      <div className="row m-2 p-3" style={styles.shadow}>
+      <div className="row m-2 p-3">
         <h1 className="text-center"> About Me </h1>
       </div>
       <div className="min-vh-100">
@@ -28,7 +28,7 @@ export default function About() {
             className="d-flex justify-content-evenly text-center"
             style={styles.shadow}
           >
-            <p className="fs-4 p-2">
+            <p className="fs-4 p-2 d-flex justify-content-center">
               Hello! <br />
               My name is Kass and I am a recent graduate from UNC Charlotte's
               Full Stack Web Development bootcamp! I was born in Mexico and
