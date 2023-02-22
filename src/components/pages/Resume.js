@@ -28,7 +28,7 @@ export default function Resume() {
         <div className="row">
           <div className="d-flex justify-content-center">
             <a
-              href="https://docs.google.com/document/d/1MBujKVfDwXmNIsnOfWOvB3Lu4F13QsMAo950S_OH-Bk/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1kUWRYrdQqSQKQRWc4rs0YQvUgqYFE3Kurx_pF__hpEQ/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
               style={styles.shadow}
