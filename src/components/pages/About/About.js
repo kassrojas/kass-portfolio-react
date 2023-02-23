@@ -1,6 +1,8 @@
 import React from "react";
-import myself from "../../assets/images/self.jpeg";
+import myself from "../../../assets/images/self.jpeg";
+import "../About/about.css";
 
+// can add styling in this manner
 const styles = {
   myimg: {
     height: 300,
@@ -20,16 +22,14 @@ export default function About() {
         <h1 className="text-center"> About Me </h1>
       </div>
       <div className="min-vh-100">
-        <div className="row m-2 p-3">
+        <div className="row m-2 p-3 justify-content-center">
           <div className="d-flex justify-content-center mb-3">
             <img src={myself} alt="me" style={styles.myimg} />
           </div>
-          <div
-            className="d-flex justify-content-evenly text-center"
-            style={styles.shadow}
-          >
-            <p className="fs-4 p-2 d-flex justify-content-center">
-              Hello! <br />
+          <div className="customContainer m-3" style={styles.shadow}>
+            <p className="fs-4 p-2 text-center">
+              <strong>Hello!</strong>
+              <hr />
               My name is Kass and I am a recent graduate from UNC Charlotte's
               Full Stack Web Development bootcamp! I was born in Mexico and
               raised in Charlotte. I learned Spanish and English at the same
