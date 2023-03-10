@@ -13,6 +13,7 @@ export default function ProjectList({ apps, heading }) {
                 <h3 className="card-title">{app.title}</h3>
                 <img src={app.img} alt="application screenshot" />
                 <p className="card-text p-2">{app.body}</p>
+                <p className="card-text p-2">Technologies Used: {app.technologies}</p>
                 <a
                   href={app.deployed}
                   target="_blank"
