@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kass-portfolio-react/static/css/main.112a1dd1.css",
-    "main.js": "/kass-portfolio-react/static/js/main.d2b66f0a.js",
+    "main.js": "/kass-portfolio-react/static/js/main.414936c4.js",
     "static/media/self.jpeg": "/kass-portfolio-react/static/media/self.da46c71a2f6e0eb443da.jpeg",
     "static/media/resume.png": "/kass-portfolio-react/static/media/resume.07364502b31225e7a687.png",
     "static/media/workday.png": "/kass-portfolio-react/static/media/workday.4400d74bfe47c2e2ff15.png",
@@ -12,10 +12,10 @@
     "static/media/sofaKing.png": "/kass-portfolio-react/static/media/sofaKing.9a13e6c6b38b91c6a611.png",
     "index.html": "/kass-portfolio-react/index.html",
     "main.112a1dd1.css.map": "/kass-portfolio-react/static/css/main.112a1dd1.css.map",
-    "main.d2b66f0a.js.map": "/kass-portfolio-react/static/js/main.d2b66f0a.js.map"
+    "main.414936c4.js.map": "/kass-portfolio-react/static/js/main.414936c4.js.map"
   },
   "entrypoints": [
     "static/css/main.112a1dd1.css",
-    "static/js/main.d2b66f0a.js"
+    "static/js/main.414936c4.js"
   ]
 }
