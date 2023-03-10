@@ -19,13 +19,18 @@ const styles = {
 export default function Footer() {
   return (
     <footer style={styles.footer}>
-      <a href="https://github.com/kassrojas" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/kassrojas"
+        target="_blank" rel="noreferrer"
+        title="My GitHub"
+      >
         <FaGithub style={styles.a} />
       </a>
       <a
         href="https://www.linkedin.com/in/ikassandrarojas/"
         target="_blank"
         rel="noreferrer"
+        title="My LinkedIn"
       >
         <FaLinkedin style={styles.a} />
       </a>
@@ -33,6 +38,7 @@ export default function Footer() {
         href="https://www.instagram.com/imkassandrarojas.lazette/"
         target="_blank"
         rel="noreferrer"
+        title="My Instagram"
       >
         <FaInstagramSquare style={styles.a} />
       </a>
