@@ -2,11 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[Link to my project](https://kassrojas.github.io/kass-portfolio-react/)
+[💥 Visit My Portfolio 💥](https://kassrojas.github.io/kass-portfolio-react/)
 
 ## Description
 
-This single page application uses React to render About Me, Resume, Contact, and Portfolio components. They provide the user with highlighted applications created over the course of this 12 week coding bootcamp.
+This React App highlights several deployed applications built by [Kass Rojas](https://github.com/kassrojas).
 
 ## Table of Contents
 
