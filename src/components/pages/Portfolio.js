@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import ProjectList from "../ProjectList";
 import codeQuiz from "../../assets/images/codequiz.png";
-import passwordGenerator from "../../assets/images/password.png";
+import piggame from "../../assets/images/piggame.png";
 import sofaKing from "../../assets/images/sofaKing.png";
-import weatherDashboard from "../../assets/images/weatherDash.png";
 import tasteful from "../../assets/images/tasteful.png";
+import weatherDashboard from "../../assets/images/weatherDash.png";
 import workday from "../../assets/images/workday.png";
 
 export default function Portfolio() {
@@ -12,7 +12,7 @@ export default function Portfolio() {
     [
       {
         title: "❊ Sofa King Cool ❊",
-        body: "Uses a database and API routes. Provides a user with a clean UI that allows for creation, deletion, and updating of rooms and furniture provided via the furniture database. Functionality to add custom furniture with an uploaded image is the one of the many highlights of this application.",
+        body: "This full stack web application allows users to create virtual rooms, add and organize furniture pieces by room, and add custom furniture to the furniture database.",
         technologies: "Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, Cloudinary, Bcrypt",
         img: sofaKing,
         deployed: "https://quiet-river-37193.herokuapp.com/",
@@ -29,23 +29,23 @@ export default function Portfolio() {
         id: 2,
       },
       {
+        title: "❊ Pig Game ❊",
+        body: "2 player game with polished and responsive UI. User attempts to reach an overall score of 100 points by rolling a dice and holding their scores.",
+        technologies: "JavaScript, HTML5, CSS3",
+        img: piggame,
+        deployed:
+          "https://kassrojas.github.io/pig-game/",
+        gitLink:
+          "https://github.com/kassrojas/pig-game",
+        id: 3,
+      },
+      {
         title: "❊ Coding Quiz ❊",
         body: "Starts a timer, prompts users with questions and a set of answer choices, penalizes users for incorrect answers, moves forward through the quiz upon click, and gives a final score that is saved locally for future reference.",
         technologies: "JavaScript, HTML5",
         img: codeQuiz,
         deployed: "https://kassrojas.github.io/codeQuiz-module4Challenge/",
         gitLink: "https://github.com/kassrojas/codeQuiz-module4Challenge",
-        id: 3,
-      },
-      {
-        title: "❊ Password Generator ❊",
-        body: "Uses prompts to intake user choices for a randomly generated password.",
-        technologies: "JavaScript, HTML5, CSS3",
-        img: passwordGenerator,
-        deployed:
-          "https://kassrojas.github.io/passwordGenerator-module-3-challenge/",
-        gitLink:
-          "https://github.com/kassrojas/passwordGenerator-module-3-challenge",
         id: 4,
       },
       {

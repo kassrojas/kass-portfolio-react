@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navigation from "../Navigation";
-import "./index.css";
+import "./header.css";
 
 export default function Header({ handlePageChange, pages, currentPage }) {
   return (

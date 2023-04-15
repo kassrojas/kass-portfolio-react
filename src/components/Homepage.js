@@ -17,7 +17,7 @@ export default function Homepage() {
         pages={pages}
         currentPage={currentPage}
       />
-      <Page className="m-3 p-2 d-flex container min-vh-100" />
+      <Page className="d-flex container min-vh-100" />
       <Footer />
     </>
   );

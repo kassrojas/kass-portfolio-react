@@ -1,11 +1,9 @@
 import React from "react";
 import resumeImg from "../../assets/images/resume.png";
+import KassRojasResume from "../../assets/files/resume.pdf";
+import "./resume.css";
 
 const styles = {
-  img: {
-    height: 400,
-    width: "auto",
-  },
   shadow: {
     border: "1px solid beige",
     boxShadow: "2px 20px 18px #D6CCC2",
@@ -15,29 +13,24 @@ const styles = {
 export default function Resume() {
   return (
     <>
-      <div>
-        <h1 className="text-center p-2 m-2"> Resume </h1>
-      </div>
-      <div className="min-vh-100">
-        <div className="row">
-          <h5 className="d-flex justify-content-center">
-            {" "}
-            Below is a copy of my resume{" "}
-          </h5>
-        </div>
-        <div className="row">
-          <div className="d-flex justify-content-center">
-            <a
-              href="https://docs.google.com/document/d/1kUWRYrdQqSQKQRWc4rs0YQvUgqYFE3Kurx_pF__hpEQ/edit?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-              style={styles.shadow}
-            >
-              <img src={resumeImg} alt="resume" style={styles.img} />
-            </a>
+      <section className="min-vh-100 resume">
+        <h1 className="text-center p-2 my-2">Resume</h1>
+        <main className="resume-main container">
+          <div className="row">
+            <h5 className="d-flex col justify-content-center text-center">
+              {" "}
+              Click To Download Copy of Updated Resume{" "}
+            </h5>
           </div>
-        </div>
-      </div>
+          <div className="row">
+            <div className="d-flex col justify-content-center my-3">
+              <a href={KassRojasResume} download="Kassandra-Rojas-Resume" target='_blank' rel="noreferrer">
+                <img src={resumeImg} alt="resume" id="resume-img" style={styles.img} />
+              </a>
+            </div>
+          </div>
+        </main>
+      </section>
     </>
   );
 }

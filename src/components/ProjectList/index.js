@@ -7,11 +7,11 @@ export default function ProjectList({ apps, heading }) {
       <h2 className="m-2">{heading}</h2>
       <div className="project-list row">
         {apps.map((app) => (
-          <div className="col-12 col-md-6 col-xl-4">
+          <div className="col-12 col-md-6 col-xl-4" key={app.id}>
             <div className="card m-2">
-              <section key={app.id} className="card-body">
+              <section className="card-body">
                 <h3 className="card-title">{app.title}</h3>
-                <img src={app.img} alt="application screenshot" />
+                <img src={app.img} alt="application screenshot" id="project-img" />
                 <p className="card-text p-2">{app.body}</p>
                 <p className="card-text p-2">Technologies Used: {app.technologies}</p>
                 <a
