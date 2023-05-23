@@ -4,7 +4,6 @@ import MobileNavBar from './mobileNavBar.components';
 import DesktopNavBar from './desktopNavBar.components';
 import "./navbar.styles.scss";
 
-
 const Navbar = () => {
   const tabComponents = [
     {

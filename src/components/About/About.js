@@ -1,5 +1,5 @@
 import React from "react";
-// import myself from "../../../assets/images/self.jpeg";
+import myself from '../../assets/images/self.jpeg';
 import "./about.css";
 
 // can add styling in this manner
@@ -23,9 +23,9 @@ export default function About() {
       </div>
       <div className="min-vh-100">
         <div className="row m-2 p-3 justify-content-center">
-          {/* <div className="d-flex justify-content-center mb-3">
+          <div className="d-flex justify-content-center mb-3">
             <img src={myself} alt="me" style={styles.myimg} />
-          </div> */}
+          </div>
           <div className="customContainer m-3" style={styles.shadow}>
             <p className="fs-4 p-2 text-center">
               Hello!

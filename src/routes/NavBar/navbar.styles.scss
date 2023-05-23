@@ -36,3 +36,20 @@
     }
   }
 }
+
+.open {
+  margin: auto 0;
+  display: block;
+
+  .nav-links-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 0px;
+  right: 10%;
+
+}

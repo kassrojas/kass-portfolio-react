@@ -9,14 +9,8 @@ const MobileNavBar = ({ tabComponents }) => {
   }
 
   return (
-    <div className="mobile-nav-bar">
-      <Link
-        className={`icon ${openMenu ? 'open' : ''}`}
-        to='/kass-portfolio-react'
-        onClick={toggleMenu}
-      >
-        <FaBars />
-      </Link>
+    <div className={`nav-bar ${openMenu ? 'open' : ''}`}>
+      <p className='icon' onClick={toggleMenu}><FaBars /></p>
       {openMenu && (
         <div className="nav-links-container">
           {tabComponents.map((t) => (
