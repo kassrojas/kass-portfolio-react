@@ -10,7 +10,7 @@ import Resume from "./components/Resume/resume.component";
 function App() {
   return (
     <Routes>
-      <Route path='kassrojas' element={<Navbar />}>
+      <Route path='kass-portfolio-react' element={<Navbar />}>
         <Route index element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='projects' element={<Portfolio />} />

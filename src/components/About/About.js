@@ -29,7 +29,9 @@ export default function About() {
           <div className="customContainer m-3" style={styles.shadow}>
             <p className="fs-4 p-2 text-center">
               Hello!
-              <hr />
+            </p>
+            <hr />
+            <p>
               My name is Kass and I am a recent graduate from UNC Charlotte's
               Full Stack Web Development bootcamp! I was born in Mexico and
               raised in Charlotte. I learned Spanish and English at the same

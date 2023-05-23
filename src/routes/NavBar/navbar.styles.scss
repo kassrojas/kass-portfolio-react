@@ -1,0 +1,38 @@
+.nav-bar {
+  width: 100%;
+  height: auto;
+  // margin: *clockwise* mt mr mb ml
+  margin: 0 auto 1rem auto;
+  padding: .2rem;
+  display: flex;
+  justify-content: space-around;
+
+  .nav-links-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .nav-link {
+      position: relative;
+      padding: 8px;
+      font-size: 16px;
+
+      &::before {
+        background: rgba(255, 248, 171, 0.7);
+        content: "";
+        inset: 0;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        z-index: -1;
+      }
+      
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom;
+      }
+    }
+  }
+}

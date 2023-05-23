@@ -1,33 +1,61 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import MobileNavBar from './mobileNavBar.components';
+import DesktopNavBar from './desktopNavBar.components';
 import "./navbar.styles.scss";
 
+
 const Navbar = () => {
+  const tabComponents = [
+    {
+      "id": 1,
+      "label": "Kass Rojas",
+      "path": "/kass-portfolio-react"
+    },
+    {
+      "id": 2,
+      "label": "About",
+      "path": "about"
+    },
+    {
+      "id": 3,
+      "label": "Projects",
+      "path": "projects"
+    },
+    {
+      "id": 4,
+      "label": "Resume",
+      "path": "resume"
+    },
+    {
+      "id": 5,
+      "label": "Contact",
+      "path": "contact"
+    }
+  ];
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleWindowResize = () => {
+    setWindowWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, [])
+
   return (
     <>
-      <div className="navbar">
-        <Link className='name-container' to='/kassrojas'>
-          <h1 className='nav-link'>
-            Kassandra Rojas
-          </h1>
-        </Link>
-        <div className="navbar-container">
-          <Link className='nav-link' to='about'>
-            About
-          </Link>
-          <Link className='nav-link' to='projects'>
-            Projects
-          </Link>
-          <Link className='nav-link' to='resume'>
-            Resume
-          </Link>
-          <Link className='nav-link' to='contact'>
-            Contact
-          </Link>
-        </div>
-      </div>
+      {
+        window.matchMedia("(max-width: 700px)").matches ?
+          <MobileNavBar tabComponents={tabComponents} /> :
+          <DesktopNavBar tabComponents={tabComponents} />
+      }
       <Outlet />
     </>
   )
 };
+
 
 export default Navbar;
