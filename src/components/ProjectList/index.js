@@ -1,17 +1,19 @@
 import React from "react";
-import "./index.css";
+import "./project-list.styles.scss";
 
 export default function ProjectList({ apps, heading }) {
   return (
     <>
-      <h2 className="m-2">{heading}</h2>
+      <div className="project-list-heading">
+        <h2 className="mb-2 text-center">{heading}</h2>
+      </div>
       <div className="project-list row">
         {apps.map((app) => (
           <div className="col-12 col-md-6 col-xl-4" key={app.id}>
             <div className="card m-2">
               <section className="card-body">
                 <h3 className="card-title">{app.title}</h3>
-                <img src={app.img} alt="application screenshot" id="project-img" />
+                <img src={app.img} alt="application screenshot" className="project-img" />
                 <p className="card-text p-2">{app.body}</p>
                 <p className="card-text p-2">Technologies Used: {app.technologies}</p>
                 <a
