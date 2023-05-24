@@ -1,0 +1,33 @@
+.header-container {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    
+    .header-name {
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        padding: 8px;
+        font-size: 18px;
+        position: relative;
+        z-index: 2; //for mobile nav bar
+
+        &::before {
+            background: rgba(255, 248, 171, 0.7);
+            content: "";
+            inset: 0;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s ease-in-out;
+            z-index: -1;
+          }
+          
+          &:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom;
+          }
+    }
+}

@@ -4,35 +4,7 @@ import MobileNavBar from './mobileNavBar.components';
 import DesktopNavBar from './desktopNavBar.components';
 import "./navbar.styles.scss";
 
-const Navbar = () => {
-  const tabComponents = [
-    {
-      "id": 1,
-      "label": "Kass Rojas",
-      "path": "/kass-portfolio-react"
-    },
-    {
-      "id": 2,
-      "label": "About",
-      "path": "about"
-    },
-    {
-      "id": 3,
-      "label": "Projects",
-      "path": "projects"
-    },
-    {
-      "id": 4,
-      "label": "Resume",
-      "path": "resume"
-    },
-    {
-      "id": 5,
-      "label": "Contact",
-      "path": "contact"
-    }
-  ];
-
+const Navbar = ({ navLabels }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleWindowResize = () => {
@@ -47,9 +19,9 @@ const Navbar = () => {
   return (
     <>
       {
-        window.matchMedia("(max-width: 700px)").matches ?
-          <MobileNavBar tabComponents={tabComponents} /> :
-          <DesktopNavBar tabComponents={tabComponents} />
+        window.matchMedia("(max-width: 500px)").matches ?
+          <MobileNavBar tabComponents={navLabels} /> :
+          <DesktopNavBar tabComponents={navLabels} />
       }
       <Outlet />
     </>
