@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-import MobileNavBar from './mobileNavBar.components';
-import DesktopNavBar from './desktopNavBar.components';
+import MobileNavBar from './mobileNavBar.component';
+import DesktopNavBar from './desktopNavBar.component';
 import "./navbar.styles.scss";
 
 const Navbar = ({ navLabels }) => {

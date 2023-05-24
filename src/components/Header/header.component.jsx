@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Navbar from "../../routes/NavBar/navbar.components";
+import Navbar from "../../routes/NavBar/navbar.component";
 import "./header.styles.scss";
 
 

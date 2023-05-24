@@ -17,13 +17,18 @@ const MobileNavBar = ({ tabComponents }) => {
     <div className={`nav-bar ${openMenu ? 'open' : ''}`}>
       <i className='icon' onClick={toggleMenu}><FaBars /></i>
       {openMenu && (
-        <div className="nav-links-container">
-          {tabComponents.map((t) => (
-            <Link className='nav-link' to={t.path} key={t.id} onClick={closeMenu} >
-              {t.label}
-            </Link>
-          ))}
-        </div>
+        <>
+          <Link className='nav-link-title' to='/kass-portfolio-react' onClick={closeMenu}>
+            Kass Rojas
+          </Link>
+          <div className="nav-links-container">
+            {tabComponents.map((t) => (
+              <Link className='nav-link' to={t.path} key={t.id} onClick={closeMenu} >
+                {t.label}
+              </Link>
+            ))}
+          </div>
+        </>
       )}
     </div>
   )
