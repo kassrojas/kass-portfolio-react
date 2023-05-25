@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Navbar from "../../routes/NavBar/navbar.component";
+import Navbar from "../NavBar/navbar.component";
 import "./header.styles.scss";
 
 
@@ -17,11 +17,6 @@ const Header = () => {
     },
     {
       "id": 4,
-      "label": "Resume",
-      "path": "resume"
-    },
-    {
-      "id": 5,
       "label": "Contact",
       "path": "contact"
     }

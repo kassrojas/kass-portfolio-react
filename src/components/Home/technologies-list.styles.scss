@@ -1,0 +1,48 @@
+// Home component
+.home-container {
+  // background-color: #ccc;
+  width: 80%;
+  margin: 0 auto;
+  
+
+  .home-main {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .technologies-container {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .home-sub {
+    text-align: center;
+  }
+}
+
+// nested technologies-list component
+.technologies-list {
+  width: 100%;
+
+  .tech-name {
+    // background-color: yellow;
+    font-size: 1rem;
+  }
+
+  .tech-icon {
+    // background-color: peru;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+
+}
+
+@media screen and (min-width: 950px) {
+  .technologies-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

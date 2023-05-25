@@ -1,19 +1,29 @@
 import React from "react";
-import "./Contact.css";
-import { FaEnvelope } from "react-icons/fa";
+import Resume from "./resume.component";
+import ContactDetails from "./contact-details.component";
+import { FaDownload, FaEye } from 'react-icons/fa';
+import "./contact.styles.scss";
 
 export default function Contact() {
+  const resumeView = [
+    {
+      id: '1rdown',
+      label: 'download',
+      action: `download="Kassandra-Rojas-Resume"`,
+      icon: <FaDownload />,
+    },
+    {
+      id: '1rview',
+      label: 'view',
+      action: '',
+      icon: <FaEye />,
+    }
+  ];
+
   return (
-    <>
-      <section className="min-vh-100 contact">
-        <h1 className="text-center p-2"> Contact Me </h1>
-        <form className="p-2 contact-form" action="mailto:kassandrarojass@gmail.com">
-          <h4>Email Me</h4>
-          <button type="submit" className="btn btn-primary">
-            <FaEnvelope />
-          </button>
-        </form>
-      </section>
-    </>
+    <div className="contact-container">
+      <ContactDetails />
+      <Resume resumeView={resumeView} />
+    </div>
   );
 }
