@@ -41,17 +41,16 @@
 
   .details-link,
   .resume-link {
-    color: var(--light-green);
+    color: var(--light-peach);
     text-decoration: none;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 
-    &:hover,
-    .resume-icon:hover {
-      transform: scale(1.2);
+    &:hover {
+      transform: scale(1.1);
       transition: all 0.5s;
-      color: var(--light-peach);
+      color: var(--light-orange);
     }
   }
 }

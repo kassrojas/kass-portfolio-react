@@ -89,7 +89,6 @@ const Home = () => {
         <p className='home-sub'> Proven experience with the following technologies:
         </p>
         <TechnologiesList techs={techs} />
-        <a href='https://github.com/kassrojas' target='_blank' rel="noreferrer">See for yourself!</a>
       </div>
     </div>
   )

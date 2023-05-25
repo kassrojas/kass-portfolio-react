@@ -1,15 +1,20 @@
 // Home component
 .home-container {
-  // background-color: #ccc;
   width: 80%;
   margin: 0 auto;
-  
 
   .home-main {
-    height: 30vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    p {
+      font-size: 2.5rem;
+      font-weight: 300;
+      text-align: center;
+      color: var(--light-blue);
+    }
   }
 
   .technologies-container {
@@ -19,25 +24,38 @@
 
   .home-sub {
     text-align: center;
+    font-size: 18px;
+    color: var(--baby-blue);
   }
 }
 
-// nested technologies-list component
 .technologies-list {
   width: 100%;
+  backdrop-filter: blur(1rem);
 
   .tech-name {
-    // background-color: yellow;
-    font-size: 1rem;
+    color: var(--lighter-beige);
+    font-size: 1.75rem;
+    text-align: end;
+    width: 50%;
+    padding: 4px;
   }
 
   .tech-icon {
-    // background-color: peru;
+    color: var(--beige);
     font-size: 3rem;
+    text-align: start;
     padding-bottom: 1rem;
+    padding: 4px;
   }
+}
 
-
+.github-link {
+  color: var(--light-orange);
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 950px) {
