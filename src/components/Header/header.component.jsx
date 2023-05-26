@@ -1,10 +1,14 @@
-import { Link } from "react-router-dom";
 import Navbar from "../NavBar/navbar.component";
 import "./header.styles.scss";
 
 
 const Header = () => {
   const navLabels = [
+    {
+      "id": 1,
+      "label": "Kass Rojas",
+      "path": "/kass-portfolio-react"
+    },
     {
       "id": 2,
       "label": "About",
@@ -23,11 +27,6 @@ const Header = () => {
   ];
   return (
     <header className="header-container">
-      <Link
-        className="header-name"
-        to='/kass-portfolio-react'>
-        Kass Rojas
-      </Link>
       <Navbar navLabels={navLabels} />
     </header>
   )

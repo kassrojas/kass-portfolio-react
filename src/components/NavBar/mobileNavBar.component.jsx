@@ -14,23 +14,28 @@ const MobileNavBar = ({ tabComponents }) => {
   };
 
   return (
-    <div className={`nav-bar ${openMenu ? 'open' : ''}`}>
-      <i className='icon' onClick={toggleMenu}><FaBars /></i>
-      {openMenu && (
-        <>
-          <Link className='nav-link-title' to='/kass-portfolio-react' onClick={closeMenu}>
-            Kass Rojas
-          </Link>
-          <div className="nav-links-container">
-            {tabComponents.map((t) => (
-              <Link className='nav-link' to={t.path} key={t.id} onClick={closeMenu} >
-                {t.label}
-              </Link>
-            ))}
-          </div>
-        </>
-      )}
-    </div>
+    <>
+      <div className='fixed-top'>
+        <Link className='mobile-nav-title' to='/kass-portfolio-react'>
+          Kass Rojas
+        </Link>
+        <i className='icon' onClick={toggleMenu}><FaBars /></i>
+      </div>
+      <div className={`nav-bar ${openMenu ? 'open fixed-top' : ''} `}>
+        {openMenu && (
+          <>
+            <i className='icon' onClick={closeMenu}><FaBars /></i>
+            <div className="nav-links-container">
+              {tabComponents.map((t) => (
+                <Link className='nav-link' to={t.path} key={t.id} onClick={closeMenu} >
+                  {t.label}
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+    </>
   )
 };
 

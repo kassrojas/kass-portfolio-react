@@ -7,17 +7,16 @@ const Resume = ({ resumeView }) => {
       <h1 className="text-center">Resume</h1>
       <div className="resume-links">
         {resumeView.map((res) => (
-          <aside className='resume-link'>
-            <p className='resume-icon'>
-              {res.icon}
-            </p>
+          <aside key={res.id} className='resume-link'>
             <a
-              key={res.id}
               href={KassRojasResume}
               action={res.action}
               target='_blank' rel="noreferrer"
               className='resume-link'
             >
+              <p className='resume-icon'>
+                {res.icon}
+              </p>
               {res.label.toUpperCase()} RESUME
             </a>
           </aside>

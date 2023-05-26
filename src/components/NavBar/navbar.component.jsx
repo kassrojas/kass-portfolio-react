@@ -19,7 +19,7 @@ const Navbar = ({ navLabels }) => {
   return (
     <>
       {
-        window.matchMedia("(max-width: 576px)").matches ?
+        window.matchMedia("(max-width: 768px)").matches ?
           <MobileNavBar tabComponents={navLabels} /> :
           <DesktopNavBar tabComponents={navLabels} />
       }
