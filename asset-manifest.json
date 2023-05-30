@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/kass-portfolio-react/static/css/main.88182d30.css",
-    "main.js": "/kass-portfolio-react/static/js/main.1627b575.js",
-    "static/media/piggame.png": "/kass-portfolio-react/static/media/piggame.6716e31e55049ddb99ad.png",
-    "static/media/workday.png": "/kass-portfolio-react/static/media/workday.4400d74bfe47c2e2ff15.png",
-    "static/media/weatherDash.png": "/kass-portfolio-react/static/media/weatherDash.8c63f6283d435db75d06.png",
-    "static/media/tasteful.png": "/kass-portfolio-react/static/media/tasteful.86bb8ddf49f4473339d4.png",
-    "static/media/codequiz.png": "/kass-portfolio-react/static/media/codequiz.d686f44af59f774ccbda.png",
-    "static/media/self.jpeg": "/kass-portfolio-react/static/media/self.c703854048e7e08830b9.jpeg",
-    "static/media/resume.pdf": "/kass-portfolio-react/static/media/resume.1ea5b82986b2c7d6541c.pdf",
-    "static/media/sofaKing.png": "/kass-portfolio-react/static/media/sofaKing.9a13e6c6b38b91c6a611.png",
-    "index.html": "/kass-portfolio-react/index.html",
-    "main.88182d30.css.map": "/kass-portfolio-react/static/css/main.88182d30.css.map",
-    "main.1627b575.js.map": "/kass-portfolio-react/static/js/main.1627b575.js.map"
+    "main.css": "/kass-rojas/static/css/main.88182d30.css",
+    "main.js": "/kass-rojas/static/js/main.3ad24950.js",
+    "static/media/piggame.png": "/kass-rojas/static/media/piggame.6716e31e55049ddb99ad.png",
+    "static/media/portfolio-screenshot.png": "/kass-rojas/static/media/portfolio-screenshot.bffd793109b43d89404a.png",
+    "static/media/workday.png": "/kass-rojas/static/media/workday.4400d74bfe47c2e2ff15.png",
+    "static/media/weatherDash.png": "/kass-rojas/static/media/weatherDash.8c63f6283d435db75d06.png",
+    "static/media/tasteful.png": "/kass-rojas/static/media/tasteful.86bb8ddf49f4473339d4.png",
+    "static/media/self.jpeg": "/kass-rojas/static/media/self.c703854048e7e08830b9.jpeg",
+    "static/media/resume.pdf": "/kass-rojas/static/media/resume.1ea5b82986b2c7d6541c.pdf",
+    "static/media/sofaKing.png": "/kass-rojas/static/media/sofaKing.9a13e6c6b38b91c6a611.png",
+    "index.html": "/kass-rojas/index.html",
+    "main.88182d30.css.map": "/kass-rojas/static/css/main.88182d30.css.map",
+    "main.3ad24950.js.map": "/kass-rojas/static/js/main.3ad24950.js.map"
   },
   "entrypoints": [
     "static/css/main.88182d30.css",
-    "static/js/main.1627b575.js"
+    "static/js/main.3ad24950.js"
   ]
 }
