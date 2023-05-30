@@ -22,7 +22,7 @@ export default function About() {
 
         <section className="about-text-container">
           <p className="about-context">
-            My name is <strong>Kass</strong> and I am a <strong>Certified Full Stack Web Development</strong> from UNC Charlotte where I also graduated Magna Cum Laude with a Bachelor of Science in Kinesiology. <br></br>I offer more than 7 years of exceptional leadership and customer service experience. My peers and coworkers would describe me as reliable, resourceful, and supportive. I show up for my team by being prepared and communicating my ideas and questions clearly.<br></br>
+            My name is <strong>Kass</strong> and I am a <strong>Certified Full Stack Web Development</strong> from UNC Charlotte where I also graduated Magna Cum Laude with a Bachelor of Science in Kinesiology. <br />I offer more than 7 years of exceptional leadership and customer service experience. My peers and coworkers would describe me as reliable, resourceful, and supportive. I show up for my team by being prepared and communicating my ideas and questions clearly.<br />
             As a natural born problem solver and excellent student, I would be a valuable asset to any team that is ready to invite a curious mind with a relentless work ethic.
           </p>
         </section>

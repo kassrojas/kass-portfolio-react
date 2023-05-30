@@ -1,63 +1,66 @@
 .contact-container {
   height: 100vh;
-  width: 80%;
-  margin: 0 auto;
+  margin-top: 2rem;
 
-  h1 {
-    color: var(--light-peach);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contact-container {
+  .contact-details-container,
+  .resume-container {
     display: flex;
-    justify-content: space-evenly;
-  }
-}
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem auto;
+    background-color: var(--overlay-blue);
+    backdrop-filter: blur(0.7rem);
 
-.contact-details-container,
-.resume-container {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 10rem;
+    .details-p {
+      padding: 8px;
+      color: var(--blush);
+    }
 
-  .details-p {
-    padding: 8px;
-    color: var(--blush);
-  }
+    .details-link {
+      padding: 6px;
+      margin: 6px auto;
+      font-size: 1.5rem;
+    }
 
-  .details-link {
-    padding: 6px;
-    margin: 6px auto;
-    font-size: 1.5rem;
-  }
+    .resume-icon {
+      font-size: 3.5rem;
+    }
 
-  .resume-icon {
-    font-size: 3.5rem;
-  }
+    .details-link,
+    .resume-link {
+      color: var(--light-peach);
+      text-decoration: none;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
 
-  .details-link,
-  .resume-link {
-    color: var(--light-peach);
-    text-decoration: none;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-
-    &:hover {
-      transform: scale(1.1);
-      transition: all 0.5s;
-      color: var(--light-orange);
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        color: var(--light-orange);
+      }
     }
   }
 }
 
 // larger screens
 @media screen and (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .resume-container a {
     width: 60%;
+  }
+
+  .contact-details-container,
+  .resume-container {
+    width: 45%;
+    margin-top: 10rem;
   }
 }

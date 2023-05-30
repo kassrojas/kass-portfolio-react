@@ -4,7 +4,7 @@ import KassRojasResume from "../../assets/files/resume.pdf";
 const Resume = ({ resumeView }) => {
   return (
     <section className="resume-container">
-      <h1 className="text-center">Resume</h1>
+      <h1 className="text-center component-heading">Resume<hr /></h1>
       <div className="resume-links">
         {resumeView.map((res) => (
           <aside key={res.id} className='resume-link'>

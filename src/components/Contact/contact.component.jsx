@@ -22,8 +22,8 @@ export default function Contact() {
 
   return (
     <div className="contact-container">
-      <ContactDetails />
       <Resume resumeView={resumeView} />
+      <ContactDetails />
     </div>
   );
 }
