@@ -1,14 +1,23 @@
 import React from "react";
 import ProjectList from "./projects-list.component";
-import codeQuiz from "../../assets/images/codequiz.png";
 import piggame from "../../assets/images/piggame.png";
 import sofaKing from "../../assets/images/sofaKing.png";
 import tasteful from "../../assets/images/tasteful.png";
 import weatherDashboard from "../../assets/images/weatherDash.png";
 import workday from "../../assets/images/workday.png";
+import porfolio from "../../assets/images/portfolio-screenshot.png";
 
 export default function Portfolio() {
   const apps = [
+    {
+      title: "Portfolio",
+      body: "The current application you are using leverages React.js to render information about my work, myself, and ways to contact me. This application uses React Router v6 for quick navigation and boasts a clean and mobile response UI.",
+      technologies: "React.js, Sass, bootstrap",
+      img: porfolio,
+      deployed: "https://github.com/kassrojas/kass-rojas",
+      gitLink: "https://github.com/kassrojas/kass-portfolio-react",
+      id: 4,
+    },
     {
       title: "Pig 🐷 Game",
       body: "2 player game with polished and responsive UI. User attempts to reach an overall score of 100 points by rolling a dice and holding their scores.",
@@ -28,15 +37,6 @@ export default function Portfolio() {
       deployed: "https://quiet-river-37193.herokuapp.com/",
       gitLink: "https://github.com/kassrojas/sofa-king-cool",
       id: 1,
-    },
-    {
-      title: "Coding 🧐 Quiz",
-      body: "Starts a timer, prompts users with questions and a set of answer choices, penalizes users for incorrect answers, moves forward through the quiz upon click, and gives a final score that is saved locally for future reference.",
-      technologies: "JavaScript, HTML5",
-      img: codeQuiz,
-      deployed: "https://kassrojas.github.io/codeQuiz-module4Challenge/",
-      gitLink: "https://github.com/kassrojas/codeQuiz-module4Challenge",
-      id: 4,
     },
     {
       title: "Weather ☀️ Dashboard",

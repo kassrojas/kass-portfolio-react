@@ -1,5 +1,3 @@
-import { FaEnvelope } from "react-icons/fa";
-
 const ContactDetails = () => {
 
   const details = [

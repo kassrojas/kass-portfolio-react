@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='kass-portfolio-react' element={<Header />}>
+        <Route path='kass-rojas' element={<Header />}>
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='projects' element={<Portfolio />} />
