@@ -15,8 +15,8 @@ const MobileNavBar = ({ tabComponents }) => {
 
   return (
     <>
-      <div className='fixed-top'>
-        <Link className='mobile-nav-title' to='/kass-portfolio-react'>
+      <div className='fixed-top stick-nav'>
+        <Link className='mobile-nav-title' to='/kass-portfolio-react/'>
           Kass Rojas
         </Link>
         <i className='icon' onClick={toggleMenu}><FaBars /></i>

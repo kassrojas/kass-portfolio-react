@@ -1,13 +1,22 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const DesktopNavBar = ({ tabComponents }) => {
   return (
     <div className="nav-bar">
       <div className="nav-links-container">
         {tabComponents.map((t) => (
-          <Link className='nav-link' to={t.path} key={t.id}>
+          <NavLink
+            key={t.id}
+            to={t.path}
+            className='nav-link'
+            style={({ isActive }) => ({
+              color: isActive ? 'var(--baby-blue)' : '',
+              fontWeight: isActive ? '700' : '',
+              backgroundColor: isActive ? 'var(--solid-blue)' : '',
+            })}
+          >
             {t.label}
-          </Link>
+          </NavLink>
         ))}
       </div>
     </div>

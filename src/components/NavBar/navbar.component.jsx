@@ -4,6 +4,7 @@ import MobileNavBar from './mobileNavBar.component';
 import DesktopNavBar from './desktopNavBar.component';
 import "./navbar.styles.scss";
 
+// navLabels from header.component.jsx
 const Navbar = ({ navLabels }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 

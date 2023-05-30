@@ -8,6 +8,11 @@ const Home = () => {
 
   const techs = [
     {
+      id: "1f",
+      name: "Javascript",
+      icon: <SiJavascript />
+    },
+    {
       id: "1a",
       name: "HTML",
       icon: <FaHtml5 />
@@ -18,24 +23,9 @@ const Home = () => {
       icon: <FaCss3Alt />
     },
     {
-      id: "1c",
-      name: "Styled Components",
-      icon: <SiStyledcomponents />
-    },
-    {
-      id: "1d",
-      name: "Bootstrap",
-      icon: <FaBootstrap />
-    },
-    {
       id: "1e",
       name: "Nodejs",
       icon: <FaNodeJs />
-    },
-    {
-      id: "1f",
-      name: "Javascript",
-      icon: <SiJavascript />
     },
     {
       id: "1g",
@@ -76,7 +66,17 @@ const Home = () => {
       id: "1o",
       name: "Jest Testing",
       icon: <SiJest />
-    }
+    },
+    {
+      id: "1c",
+      name: "Styled Components",
+      icon: <SiStyledcomponents />
+    },
+    {
+      id: "1d",
+      name: "Bootstrap",
+      icon: <FaBootstrap />
+    },
   ];
 
   return (
@@ -90,7 +90,7 @@ const Home = () => {
         </p>
         <TechnologiesList techs={techs} />
       </div>
-    </div>
+    </div >
   )
 };
 

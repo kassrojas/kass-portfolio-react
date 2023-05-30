@@ -17,10 +17,16 @@ body {
   --light-blue: #99e2db;
   --baby-blue: #c9fbff;
   --bright-turq: #56cfe1;
-  --solid-blue: #457b9d;
+  --solid-blue: #275470;
   --light-orange: #ffaa00;
   --dark-orange: #ff7b00;
   --yellow-little-orange: #ffdd00;
   --beige: #d5bdaf;
   --lighter-beige: #f5ebe0;
+}
+
+.component-heading {
+  color: white;
+  font-weight: 800;
+  letter-spacing: 8px;
 }

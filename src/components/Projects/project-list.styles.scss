@@ -1,13 +1,7 @@
-.project-heading {
-  color: white;
-  font-weight: 800;
-  letter-spacing: 8px;
-}
-
 .card-body,
 .card {
-  background-color: transparent !important;
-  backdrop-filter: blur(1rem);
+  background-color: rgba(31, 43, 58, 0.15) !important;
+  backdrop-filter: blur(2rem);
   color: var(--light-blush);
   border-style: solid none !important;
   border-color: var(--solid-blue);
