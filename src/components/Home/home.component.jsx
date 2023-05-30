@@ -82,7 +82,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className='home-main'>
-        <p> Full stack software developer based in Charlotte, North Carolina
+        <p> <hr />Full stack software developer based in Charlotte, North Carolina<hr />
         </p>
       </div>
       <div className='technologies-container'>

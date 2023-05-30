@@ -10,8 +10,6 @@
     text-align: center;
     padding: 1rem;
     margin: 2rem auto;
-    background-color: var(--overlay-blue);
-    backdrop-filter: blur(0.7rem);
 
     .details-p {
       padding: 8px;
@@ -46,7 +44,7 @@
 }
 
 // larger screens
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 870px) {
   .contact-container {
     display: flex;
     justify-content: space-evenly;
@@ -62,5 +60,13 @@
   .resume-container {
     width: 45%;
     margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .contact-details-container,
+  .resume-container {
+    background-color: var(--overlay-blue);
+    backdrop-filter: blur(1.2rem);
   }
 }

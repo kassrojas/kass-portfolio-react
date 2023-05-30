@@ -30,4 +30,10 @@ body {
   color: white;
   font-weight: 800;
   letter-spacing: 8px;
+
+  hr {
+    color: var(--bright-turq);
+    width: 50%;
+    margin: 1rem auto;
+  }
 }
