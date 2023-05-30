@@ -16,13 +16,23 @@
   }
 
   .about-text-container {
-    width: 80%;
     margin: 1rem auto;
     padding: 1rem;
     text-align: center;
     color: var(--lighter-beige);
     background-color: var(--overlay-blue);
     backdrop-filter: blur(3rem);
+
+    .about-context {
+      line-height: 1.7rem;
+    }
+  }
+}
+
+// larger screens
+@media screen and (min-width: 768px) {
+  .about-text-container {
+    width: 80%;
 
     .about-context {
       font-size: 1.5rem;
