@@ -14,7 +14,7 @@ export default function Portfolio() {
       body: "The current application you are using leverages React.js to render information about my work, myself, and ways to contact me. This application uses React Router v6 for quick navigation and boasts a clean and mobile response UI.",
       technologies: "React.js, Sass, bootstrap",
       img: porfolio,
-      deployed: "https://github.com/kassrojas/kass-rojas",
+      deployed: "https://kassrojas.github.io/kass-portfolio-react/",
       gitLink: "https://github.com/kassrojas/kass-portfolio-react",
       id: 4,
     },

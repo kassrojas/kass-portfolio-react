@@ -7,7 +7,7 @@ const Header = () => {
     {
       "id": 1,
       "label": "Kass Rojas",
-      "path": "/kass-rojas/"
+      "path": "/kass-portfolio-react/"
     },
     {
       "id": 2,

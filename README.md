@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[💥 Visit My Portfolio 💥](https://kassrojas.github.io/kass-rojas/)
+[💥 Visit My Portfolio 💥](https://kassrojas.github.io/kass-portfolio-react/)
 
 ## Description
 

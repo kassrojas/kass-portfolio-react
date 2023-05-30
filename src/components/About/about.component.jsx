@@ -2,14 +2,6 @@ import React from "react";
 import myself from '../../assets/images/self.jpeg';
 import "./about.styles.scss";
 
-// //one way to add styling
-// const styles = {
-// myimg: {
-//   height: "auto",
-//   width: 300,
-// },
-// };
-
 export default function About() {
   return (
     <>
