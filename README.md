@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[💥 Visit My Portfolio 💥](https://kassrojas.github.io/kass-portfolio-react/)
+[👉🏼 Visit My Portfolio 👈🏼](https://kassrojas.github.io/kass-portfolio-react/)
 
 ## Description
 
@@ -11,17 +11,12 @@ This React App highlights several deployed applications built by [Kass Rojas](ht
 ## Table of Contents
 
 - [Technologies](#technologies)
-- [Visuals](#visuals)
 - [License](#license)
 - [Questions](#questions)
 
 ## Technologies
 
-`React JS` to build UI
-
-## Visuals
-
-![Screenshot](./public/readme.png)
+`React JS` to render UI, `CSS` and `Sass` for styling
 
 ## License
 
