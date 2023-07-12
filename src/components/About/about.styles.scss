@@ -7,11 +7,11 @@
     justify-content: center;
     width: 80%;
     margin: 0 auto;
+    height: 50vh;
 
     .about-img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
+      height: 100%;
+      max-width: auto;
     }
   }
 
@@ -24,7 +24,8 @@
     backdrop-filter: blur(3rem);
 
     .about-context {
-      line-height: 1.7rem;
+      font-size: 1.3rem;
+      line-height: 2rem;
     }
   }
 }
@@ -35,8 +36,8 @@
     width: 80%;
 
     .about-context {
-      font-size: 1.5rem;
       line-height: 2.75rem;
+      font-size: 1.3rem;
       font-weight: 700px;
     }
   }

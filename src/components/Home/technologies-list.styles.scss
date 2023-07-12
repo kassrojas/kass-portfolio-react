@@ -1,6 +1,6 @@
 // Home component
 .home-container {
-  width: 80%;
+  min-height: 100vh;
   margin: 0 auto;
 
   .home-main {
@@ -8,12 +8,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 
     p {
       font-size: 2.5rem;
       font-weight: 300;
       text-align: center;
       color: var(--light-blue);
+      padding: 0.5rem;
+      border-top: 2px solid var(--light-blue);
+      border-bottom: 2px solid var(--light-blue);
     }
   }
 

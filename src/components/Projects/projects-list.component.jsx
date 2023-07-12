@@ -15,7 +15,16 @@ export default function ProjectList({ apps, heading }) {
                 <h3 className="card-title">
                   {app.title}
                 </h3>
-                <img src={app.img} alt="application screenshot" className="project-img" />
+                <a href={app.deployed}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-img"
+                >
+                  <img src={app.img}
+                    alt="application screenshot"
+                    style={{ height: '100%', width: '100%' }}
+                  />
+                </a>
                 <p className="card-text app-desc p-2">
                   {app.body}
                 </p>
@@ -23,20 +32,14 @@ export default function ProjectList({ apps, heading }) {
                   Technologies Used:<br></br> {app.technologies}
                 </p>
                 <a
-                  href={app.deployed}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-link m-2"
-                >
-                  Deployed App
-                </a>
-                <a
                   href={app.gitLink}
                   target="_blank"
                   rel="noreferrer"
                   className="project-link m-2"
                 >
-                  GitHub Repo
+                  <code>
+                    View 👀 Code
+                  </code>
                 </a>
               </section>
             </div>

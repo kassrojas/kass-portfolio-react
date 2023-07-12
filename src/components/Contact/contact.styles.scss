@@ -1,5 +1,5 @@
 .contact-container {
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 2rem;
 
   .contact-details-container,
@@ -8,6 +8,7 @@
     flex-direction: column;
     align-items: stretch;
     text-align: center;
+    width: 95%;
     padding: 1rem;
     margin: 2rem auto;
 

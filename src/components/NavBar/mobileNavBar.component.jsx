@@ -15,12 +15,13 @@ const MobileNavBar = ({ tabComponents }) => {
 
   return (
     <>
-
-      <div className='fixed-top stick-nav'>
-        <Link className='mobile-nav-title' to='/kass-portfolio-react/'>
-          Kass Rojas
-        </Link>
-        <i className='icon' onClick={toggleMenu}><FaBars /></i>
+      <Link className='mobile-nav-title' to='/kass-portfolio-react/'>
+        Kass Rojas
+      </Link>
+      <div className="fixed-top">
+        <i className='icon' onClick={toggleMenu}>
+          <FaBars />
+        </i>
       </div>
 
       <div className={`nav-bar ${openMenu ? 'open fixed-top' : ''} `}>
