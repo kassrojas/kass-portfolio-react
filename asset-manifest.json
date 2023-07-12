@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/kass-portfolio-react/static/css/main.075cf2f0.css",
-    "main.js": "/kass-portfolio-react/static/js/main.c7f3fccc.js",
+    "main.css": "/kass-portfolio-react/static/css/main.ebdf4edd.css",
+    "main.js": "/kass-portfolio-react/static/js/main.b3e49067.js",
     "static/media/portfolio-screenshot.png": "/kass-portfolio-react/static/media/portfolio-screenshot.bffd793109b43d89404a.png",
     "static/media/piggame.png": "/kass-portfolio-react/static/media/piggame.c4079dc96d2ceb91a716.png",
     "static/media/workday.png": "/kass-portfolio-react/static/media/workday.4400d74bfe47c2e2ff15.png",
     "static/media/weatherDash.png": "/kass-portfolio-react/static/media/weatherDash.8c63f6283d435db75d06.png",
+    "static/media/cropped-self.jpg": "/kass-portfolio-react/static/media/cropped-self.135365ef35495a285b4d.jpg",
     "static/media/tasteful.png": "/kass-portfolio-react/static/media/tasteful.86bb8ddf49f4473339d4.png",
-    "static/media/self.jpeg": "/kass-portfolio-react/static/media/self.c703854048e7e08830b9.jpeg",
     "static/media/resume.pdf": "/kass-portfolio-react/static/media/resume.1ea5b82986b2c7d6541c.pdf",
     "static/media/sofaKing.png": "/kass-portfolio-react/static/media/sofaKing.9a13e6c6b38b91c6a611.png",
     "index.html": "/kass-portfolio-react/index.html",
-    "main.075cf2f0.css.map": "/kass-portfolio-react/static/css/main.075cf2f0.css.map",
-    "main.c7f3fccc.js.map": "/kass-portfolio-react/static/js/main.c7f3fccc.js.map"
+    "main.ebdf4edd.css.map": "/kass-portfolio-react/static/css/main.ebdf4edd.css.map",
+    "main.b3e49067.js.map": "/kass-portfolio-react/static/js/main.b3e49067.js.map"
   },
   "entrypoints": [
-    "static/css/main.075cf2f0.css",
-    "static/js/main.c7f3fccc.js"
+    "static/css/main.ebdf4edd.css",
+    "static/js/main.b3e49067.js"
   ]
 }
