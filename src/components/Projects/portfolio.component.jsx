@@ -4,7 +4,7 @@ import piggame from "../../assets/images/piggame.png";
 import sofaKing from "../../assets/images/sofaKing.png";
 import tasteful from "../../assets/images/tasteful.png";
 import weatherDashboard from "../../assets/images/weatherDash.png";
-import workday from "../../assets/images/workday.png";
+import forkify from "../../assets/images/forkify.png";
 import porfolio from "../../assets/images/portfolio-screenshot.png";
 
 export default function Portfolio() {
@@ -17,6 +17,15 @@ export default function Portfolio() {
       deployed: "https://kassrojas.github.io/kass-portfolio-react/",
       gitLink: "https://github.com/kassrojas/kass-portfolio-react",
       id: 4,
+    },
+    {
+      title: "Forkify 🍽️ Recipes",
+      body: "Forkify uses Forkify API to search through recipes via ingredient query. Users can add custom recipes and bookmark recipes for convenient access when leaving and returning to the app.",
+      technologies: "JavaScript, HTML5, Sass, Parcel, Babel, ForkifyAPI",
+      img: forkify,
+      deployed: "https://forkify-kass.netlify.app/",
+      gitLink: "https://github.com/kassrojas/forkify-recipe-search",
+      id: 6,
     },
     {
       title: "Pig 🐷 Game",
@@ -55,16 +64,7 @@ export default function Portfolio() {
       deployed: "https://alandis01.github.io/food-and-bev-project-1/",
       gitLink: "https://github.com/alandis01/food-and-bev-project-1",
       id: 2,
-    },
-    {
-      title: "Work Day 📆 Scheduler",
-      body: "This application allows users to input notes corresponding to a certain time window. The notes can be saved locally and upon refresh, rendered on the page.",
-      technologies: "JavaScript, HTML5",
-      img: workday,
-      deployed: "https://kassrojas.github.io/scheduler-module5-challenge/",
-      gitLink: "https://github.com/kassrojas/scheduler-module5-challenge",
-      id: 6,
-    },
+    }
   ];
   return (
     <div className="m-2 min-vh-100">
