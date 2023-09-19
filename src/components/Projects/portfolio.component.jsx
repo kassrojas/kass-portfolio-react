@@ -2,7 +2,7 @@ import React from "react";
 import ProjectList from "./projects-list.component";
 import piggame from "../../assets/images/piggame.png";
 import sofaKing from "../../assets/images/sofaKing.png";
-import tasteful from "../../assets/images/tasteful.png";
+import mapty from "../../assets/images/mapty.png";
 import weatherDashboard from "../../assets/images/weatherDash.png";
 import forkify from "../../assets/images/forkify.png";
 import porfolio from "../../assets/images/portfolio-screenshot.png";
@@ -39,6 +39,15 @@ export default function Portfolio() {
       id: 3,
     },
     {
+      title: "Mapty 📍",
+      body: "Uses geolocation API to easily log cycling and running workouts.",
+      technologies: "JavaScript, Leaflet.js",
+      img: mapty,
+      deployed: "https://kassrojas.github.io/mapty/",
+      gitLink: "https://github.com/kassrojas/mapty",
+      id: 2,
+    },
+    {
       title: "Sofa King C♔♔l",
       body: "This full stack web application allows users to create virtual rooms, add and organize furniture pieces by room, and add custom furniture to the furniture database.",
       technologies: "Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, Cloudinary, Bcrypt",
@@ -56,15 +65,6 @@ export default function Portfolio() {
       gitLink: "https://github.com/kassrojas/weatherDashboard-module06",
       id: 5,
     },
-    {
-      title: "Tasteful 🍳 Choice",
-      body: "Uses two server side API's to display meals and drinks that contain a user chosen ingredient",
-      technologies: "JavaScript",
-      img: tasteful,
-      deployed: "https://alandis01.github.io/food-and-bev-project-1/",
-      gitLink: "https://github.com/alandis01/food-and-bev-project-1",
-      id: 2,
-    }
   ];
   return (
     <div className="m-2 min-vh-100">
