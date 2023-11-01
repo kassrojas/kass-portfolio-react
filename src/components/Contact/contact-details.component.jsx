@@ -4,7 +4,7 @@ const ContactDetails = () => {
     {
       id: 'det1',
       label: "Send An Email",
-      info: "mailto:kassandrarojass@gmail.com",
+      info: "mailto:kassandra.lazette@gmail.com",
     },
     {
       id: 'det2',
