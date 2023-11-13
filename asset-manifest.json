@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/kass-portfolio-react/static/css/main.8c4bae52.css",
-    "main.js": "/kass-portfolio-react/static/js/main.95ed83be.js",
+    "main.js": "/kass-portfolio-react/static/js/main.3f3b1fc9.js",
     "static/media/mapty.png": "/kass-portfolio-react/static/media/mapty.066ce0bcd7c6c4c2ee06.png",
+    "static/media/hacker_news_webscrap.gif": "/kass-portfolio-react/static/media/hacker_news_webscrap.82bf733fe123ab769756.gif",
     "static/media/portfolio-screenshot.png": "/kass-portfolio-react/static/media/portfolio-screenshot.bffd793109b43d89404a.png",
     "static/media/forkify.png": "/kass-portfolio-react/static/media/forkify.a48679c84171ef895eb1.png",
     "static/media/piggame.png": "/kass-portfolio-react/static/media/piggame.c4079dc96d2ceb91a716.png",
-    "static/media/weatherDash.png": "/kass-portfolio-react/static/media/weatherDash.8c63f6283d435db75d06.png",
     "static/media/cropped-self.jpg": "/kass-portfolio-react/static/media/cropped-self.135365ef35495a285b4d.jpg",
     "static/media/resume.pdf": "/kass-portfolio-react/static/media/resume.9a2f7d7ca7da8a6f202e.pdf",
     "static/media/sofaKing.png": "/kass-portfolio-react/static/media/sofaKing.9a13e6c6b38b91c6a611.png",
     "index.html": "/kass-portfolio-react/index.html",
     "main.8c4bae52.css.map": "/kass-portfolio-react/static/css/main.8c4bae52.css.map",
-    "main.95ed83be.js.map": "/kass-portfolio-react/static/js/main.95ed83be.js.map"
+    "main.3f3b1fc9.js.map": "/kass-portfolio-react/static/js/main.3f3b1fc9.js.map"
   },
   "entrypoints": [
     "static/css/main.8c4bae52.css",
-    "static/js/main.95ed83be.js"
+    "static/js/main.3f3b1fc9.js"
   ]
 }
