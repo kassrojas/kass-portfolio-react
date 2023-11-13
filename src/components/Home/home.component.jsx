@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaNodeJs, FaBootstrap, FaReact } from 'react-icons/fa';
-import { SiStyledcomponents, SiJavascript, SiReduxsaga, SiExpress, SiInsomnia, SiMongodb, SiJest } from 'react-icons/si';
+import { SiStyledcomponents, SiPython, SiJavascript, SiReduxsaga, SiExpress, SiInsomnia, SiMongodb, SiJest, SiPostgresql } from 'react-icons/si';
 import { GrMysql, GrGraphQl } from 'react-icons/gr';
 import TechnologiesList from './technologies-list.component';
 import "./technologies-list.styles.scss";
@@ -8,19 +8,14 @@ const Home = () => {
 
   const techs = [
     {
+      id: "1p",
+      name: "Python",
+      icon: <SiPython />
+    },
+    {
       id: "1f",
       name: "Javascript",
       icon: <SiJavascript />
-    },
-    {
-      id: "1a",
-      name: "HTML",
-      icon: <FaHtml5 />
-    },
-    {
-      id: "1b",
-      name: "CSS",
-      icon: <FaCss3Alt />
     },
     {
       id: "1e",
@@ -41,6 +36,11 @@ const Home = () => {
       id: "1i",
       name: "Express",
       icon: <SiExpress />
+    },
+    {
+      id: "1q",
+      name: "PostgreSQL",
+      icon: <SiPostgresql />
     },
     {
       id: "1j",
@@ -66,6 +66,16 @@ const Home = () => {
       id: "1o",
       name: "Jest Testing",
       icon: <SiJest />
+    },
+    {
+      id: "1a",
+      name: "HTML",
+      icon: <FaHtml5 />
+    },
+    {
+      id: "1b",
+      name: "CSS",
+      icon: <FaCss3Alt />
     },
     {
       id: "1c",

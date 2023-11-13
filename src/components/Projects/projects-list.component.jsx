@@ -21,7 +21,7 @@ export default function ProjectList({ apps, heading }) {
                   className="project-img"
                 >
                   <img src={app.img}
-                    alt="application screenshot"
+                    alt={app.title}
                     style={{ height: '100%', width: '100%' }}
                   />
                 </a>
