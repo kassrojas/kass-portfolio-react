@@ -3,7 +3,7 @@ import ProjectList from "./projects-list.component";
 import piggame from "../../assets/images/piggame.png";
 import sofaKing from "../../assets/images/sofaKing.png";
 import mapty from "../../assets/images/mapty.png";
-import weatherDashboard from "../../assets/images/weatherDash.png";
+import hackerNews from "../../assets/images/hacker_news_webscrap.gif";
 import forkify from "../../assets/images/forkify.png";
 import porfolio from "../../assets/images/portfolio-screenshot.png";
 
@@ -26,6 +26,15 @@ export default function Portfolio() {
       deployed: "https://forkify-kass.netlify.app/",
       gitLink: "https://github.com/kassrojas/forkify-recipe-search",
       id: 6,
+    },
+    {
+      title: "Hacker News 📰 Web Scraping",
+      body: "Python script developed to streamline the process of collecting and curating articles from an online news platform based on a predefined criterion, specifically, the number of votes received by each article.",
+      technologies: "Python",
+      img: hackerNews,
+      deployed: "https://github.com/kassrojas/hacker_rank_web_scraping",
+      gitLink: "https://github.com/kassrojas/hacker_rank_web_scraping",
+      id: 5,
     },
     {
       title: "Pig 🐷 Game",
@@ -55,15 +64,6 @@ export default function Portfolio() {
       deployed: "https://quiet-river-37193.herokuapp.com/",
       gitLink: "https://github.com/kassrojas/sofa-king-cool",
       id: 1,
-    },
-    {
-      title: "Weather ☀️ Dashboard",
-      body: "API calls allows for a user to input a city name and returns a 5 day forecast with some details. Searches are saved using local storage so that users can reference or even delete older searches.",
-      technologies: "JavaScript, HTML5, CSS3",
-      img: weatherDashboard,
-      deployed: "https://kassrojas.github.io/weatherDashboard-module06/",
-      gitLink: "https://github.com/kassrojas/weatherDashboard-module06",
-      id: 5,
     },
   ];
   return (
