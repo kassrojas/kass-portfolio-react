@@ -2,7 +2,7 @@ import React from "react";
 import ProjectList from "./projects-list.component";
 import piggame from "../../assets/images/piggame.png";
 import sofaKing from "../../assets/images/sofaKing.png";
-import mapty from "../../assets/images/mapty.png";
+import jsInterview from "../../assets/images/jsinterview.png";
 import hackerNews from "../../assets/images/hacker_news_webscrap.gif";
 import forkify from "../../assets/images/forkify.png";
 import porfolio from "../../assets/images/portfolio-screenshot.png";
@@ -48,12 +48,12 @@ export default function Portfolio() {
       id: 3,
     },
     {
-      title: "Mapty 📍",
-      body: "Uses geolocation API to easily log cycling and running workouts.",
-      technologies: "JavaScript, Leaflet.js",
-      img: mapty,
-      deployed: "https://kassrojas.github.io/mapty/",
-      gitLink: "https://github.com/kassrojas/mapty",
+      title: "JS Interview 📝 Cards",
+      body: "Flashcard application that allows users to add questions and quiz themselves on JS concepts",
+      technologies: "JavaScript, Express.js, nodemon",
+      img: jsInterview,
+      deployed: "https://app.screencastify.com/v2/watch/yML6BWAiUEQyg7v2cU5J",
+      gitLink: "https://github.com/kassrojas/practicing-express-js",
       id: 2,
     },
     {
