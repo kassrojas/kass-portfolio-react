@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaNodeJs, FaBootstrap, FaReact } from 'react-icons/fa';
-import { SiStyledcomponents, SiPython, SiJavascript, SiReduxsaga, SiExpress, SiInsomnia, SiMongodb, SiJest, SiPostgresql } from 'react-icons/si';
+import { SiStyledcomponents, SiPython, SiJavascript, SiExpress, SiInsomnia, SiMongodb, SiJest, SiPostgresql } from 'react-icons/si';
 import { GrMysql, GrGraphQl } from 'react-icons/gr';
 import TechnologiesList from './technologies-list.component';
 import "./technologies-list.styles.scss";
@@ -26,11 +26,6 @@ const Home = () => {
       id: "1g",
       name: "Reactjs",
       icon: <FaReact />
-    },
-    {
-      id: "1h",
-      name: "Redux/Redux Saga",
-      icon: <SiReduxsaga />
     },
     {
       id: "1i",
@@ -99,6 +94,7 @@ const Home = () => {
         <p className='home-sub'> Proven experience with the following technologies:
         </p>
         <TechnologiesList techs={techs} />
+        <p className='home-sub'>...and more! Contact me to discuss your needs!</p>
       </div>
     </div >
   )

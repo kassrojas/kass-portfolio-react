@@ -11,7 +11,7 @@ export default function Portfolio() {
   const apps = [
     {
       title: "Portfolio",
-      body: "The current application you are using leverages React.js to render information about my work, myself, and ways to contact me. This application uses React Router v6 for quick navigation and boasts a clean and mobile response UI.",
+      body: "The current application you are using leverages React.js to render information about my work, myself, and ways to contact me. This application boasts a clean and responsive UI.",
       technologies: "React.js, Sass, bootstrap",
       img: porfolio,
       deployed: "https://kassrojas.github.io/kass-portfolio-react/",
@@ -20,7 +20,7 @@ export default function Portfolio() {
     },
     {
       title: "Forkify 🍽️ Recipes",
-      body: "Forkify uses Forkify API to search through recipes via ingredient query. Users can add custom recipes and bookmark recipes for convenient access when leaving and returning to the app.",
+      body: "Forkify uses Forkify API to search through recipes via ingredient query. Users can add custom recipes and bookmark recipes for convenient access when leaving and returning to the app. For best experience, use on desktop.",
       technologies: "JavaScript, HTML5, Sass, Parcel, Babel, ForkifyAPI",
       img: forkify,
       deployed: "https://forkify-kass.netlify.app/",
@@ -52,7 +52,7 @@ export default function Portfolio() {
       body: "Flashcard application that allows users to add questions and quiz themselves on JS concepts",
       technologies: "JavaScript, Express.js, nodemon",
       img: jsInterview,
-      deployed: "https://app.screencastify.com/v2/watch/yML6BWAiUEQyg7v2cU5J",
+      deployed: "https://github.com/kassrojas/practicing-express-js",
       gitLink: "https://github.com/kassrojas/practicing-express-js",
       id: 2,
     },
@@ -67,8 +67,14 @@ export default function Portfolio() {
     },
   ];
   return (
-    <div className="m-2 min-vh-100">
+    <div className="m-2">
       <ProjectList apps={apps} heading="Projects" />
+      <p className="git-link">Check out more projects on my
+        <a
+          href="https://github.com/kassrojas"
+          target="_blank" rel="noreferrer"
+          title="My GitHub"> GITHUB</a>
+      </p>
     </div>
   );
 }

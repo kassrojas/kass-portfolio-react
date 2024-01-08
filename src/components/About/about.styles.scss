@@ -1,11 +1,9 @@
 .about-container {
-  min-height: 100vh;
-
   .image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    // width: auto;
     margin: 0 auto;
     height: 50vh;
 
@@ -20,14 +18,21 @@
     padding: 1rem;
     text-align: center;
     color: var(--lighter-beige);
-    background-color: var(--overlay-blue);
-    backdrop-filter: blur(3rem);
+    background-color: var(--overlay-purp);
+    // backdrop-filter: blur(3rem);
+    backdrop-filter: brightness(20%);
+    border-radius: 4rem;
+    width: 85%;
 
     .about-context {
       font-size: 1.3rem;
       line-height: 2rem;
     }
   }
+}
+
+li {
+  list-style: none;
 }
 
 // larger screens
