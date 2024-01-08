@@ -30,4 +30,5 @@ const Navbar = ({ navLabels }) => {
 };
 
 
+
 export default Navbar;

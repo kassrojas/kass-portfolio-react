@@ -1,4 +1,25 @@
 .header-container {
-  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
   padding: 3rem;
+  // z-index: 1;
+  display: flex;
+  // background-color: rgba(255, 248, 171, 0.2);
+  // backdrop-filter: blur(10rem);
+  // width: 100%;
+
+  .fa-arrow {
+    font-size: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 2;
+    color: var(--solid-blue);
+
+    &:hover {
+      color: var(--baby-blue);
+      transition: 0.3s;
+    }
+  }
 }

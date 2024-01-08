@@ -6,6 +6,7 @@ export default function ProjectList({ apps, heading }) {
     <>
 
       <h2 className="p-3 text-center component-heading">{heading}<hr /></h2>
+      <p className="text-center text-white mb-3">Check out some of my recent applications</p>
 
       <div className="project-list row">
         {apps.map((app) => (

@@ -1,4 +1,4 @@
-body {
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -23,13 +23,17 @@ body {
   --yellow-little-orange: #ffdd00;
   --beige: #d5bdaf;
   --lighter-beige: #f5ebe0;
-  --overlay-blue: rgba(31, 43, 58, 0.2);
+  --overlay-blue: rgba(31, 43, 58, 0.5);
+  --overlay-purp: rgba(126, 28, 175, 0.3);
+  --overlay-orange: rgba(198, 131, 8, 0.3);
 }
 
 .component-heading {
   color: white;
   font-weight: 800;
+  font-size: 2rem;
   letter-spacing: 8px;
+  margin-top: 2rem;
 
   hr {
     color: var(--bright-turq);

@@ -22,6 +22,7 @@ export default function Contact() {
 
   return (
     <div className="contact-container">
+      <h2 className="component-heading p-3 text-center">Reach Out<hr /></h2>
       <Resume resumeView={resumeView} />
       <ContactDetails />
     </div>

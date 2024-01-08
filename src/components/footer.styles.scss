@@ -1,0 +1,19 @@
+footer {
+  margin: auto;
+  padding-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .footer-ico {
+    font-size: 3rem;
+    margin: 1rem;
+    color: #ccc;
+
+    &:hover {
+      transition: all 0.3s;
+      transform: scale(1.2);
+      color: var(--light-blush);
+    }
+  }
+}
