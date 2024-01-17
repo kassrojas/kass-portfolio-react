@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/kass-portfolio-react/static/css/main.fc3d599b.css",
-    "main.js": "/kass-portfolio-react/static/js/main.7bd80da9.js",
+    "main.js": "/kass-portfolio-react/static/js/main.e7d2a687.js",
     "static/media/hacker_news_webscrap.gif": "/kass-portfolio-react/static/media/hacker_news_webscrap.82bf733fe123ab769756.gif",
     "static/media/portfolio-screenshot.png": "/kass-portfolio-react/static/media/portfolio-screenshot.bffd793109b43d89404a.png",
     "static/media/forkify.png": "/kass-portfolio-react/static/media/forkify.a48679c84171ef895eb1.png",
     "static/media/piggame.png": "/kass-portfolio-react/static/media/piggame.c4079dc96d2ceb91a716.png",
     "static/media/cropped-self.jpg": "/kass-portfolio-react/static/media/cropped-self.135365ef35495a285b4d.jpg",
-    "static/media/resume.pdf": "/kass-portfolio-react/static/media/resume.9a2f7d7ca7da8a6f202e.pdf",
+    "static/media/kass_lazette_resume.pdf": "/kass-portfolio-react/static/media/kass_lazette_resume.0e5de9c403e59fd4d99e.pdf",
     "static/media/jsinterview.png": "/kass-portfolio-react/static/media/jsinterview.80410d9b493bea9bbe41.png",
     "static/media/sofaKing.png": "/kass-portfolio-react/static/media/sofaKing.9a13e6c6b38b91c6a611.png",
     "index.html": "/kass-portfolio-react/index.html",
     "main.fc3d599b.css.map": "/kass-portfolio-react/static/css/main.fc3d599b.css.map",
-    "main.7bd80da9.js.map": "/kass-portfolio-react/static/js/main.7bd80da9.js.map"
+    "main.e7d2a687.js.map": "/kass-portfolio-react/static/js/main.e7d2a687.js.map"
   },
   "entrypoints": [
     "static/css/main.fc3d599b.css",
-    "static/js/main.7bd80da9.js"
+    "static/js/main.e7d2a687.js"
   ]
 }
