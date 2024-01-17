@@ -1,5 +1,5 @@
 import React from "react";
-import KassRojasResume from "../../assets/files/resume.pdf";
+import KassRojasResume from "../../assets/files/kass_lazette_resume.pdf";
 
 const Resume = ({ resumeView }) => {
   return (
