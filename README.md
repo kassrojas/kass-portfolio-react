@@ -10,9 +10,14 @@ This React App highlights several deployed applications built by [Kass Rojas](ht
 
 ## Table of Contents
 
+- [Getting Started](#getting-started)
 - [Technologies](#technologies)
 - [License](#license)
 - [Questions](#questions)
+
+## Getting Started
+
+`git clone` this repository onto your local machine. `npm i` to install all necessary dependencies, `npm run start` to start application at `http://localhost:3000/kass-portfolio-react`
 
 ## Technologies
 
