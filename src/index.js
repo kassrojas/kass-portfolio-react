@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "bootswatch/dist/lux/bootstrap.min.css";
-import "./index.styles.scss";
+import './index.css'; // Tailwind CSS
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

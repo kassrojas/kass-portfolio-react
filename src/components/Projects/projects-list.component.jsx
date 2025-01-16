@@ -1,5 +1,4 @@
 import React from "react";
-import "./project-list.styles.scss";
 
 export default function ProjectList({ apps, heading }) {
   return (

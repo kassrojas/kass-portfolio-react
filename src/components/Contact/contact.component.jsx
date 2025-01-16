@@ -2,7 +2,6 @@ import React from "react";
 import Resume from "./resume.component";
 import ContactDetails from "./contact-details.component";
 import { FaDownload, FaEye } from 'react-icons/fa';
-import "./contact.styles.scss";
 
 export default function Contact() {
   const resumeView = [
