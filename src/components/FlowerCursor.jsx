@@ -83,7 +83,7 @@ const SWITCHES = [
 const SLIDERS = [
   {
     key: "hue",
-    label: "Flower color",
+    label: "Color",
     min: 0,
     max: 359,
     step: 1,
