@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { FaCog, FaTimes } from "react-icons/fa";
+import { FaCog, FaPlay, FaTimes } from "react-icons/fa";
 
 // A flower that replaces the mouse cursor. As it moves it sheds a slow trail of
 // petals that drift down and pile up along the bottom of the screen. Sweeping
@@ -67,23 +67,23 @@ export const DEFAULTS = {
   flowerCursor: true, // false = the regular system cursor
   petals: true, // false = no falling petals, just the cursor
   hue: 50, // petal color — pastel yellow (DEFAULT_HUE would be the original pink)
-  spawnEveryMs: 500, // trail density while moving
+  spawnEveryMs: 600, // trail density while moving
   maxPileH: 60, // tallest the pile can get, px
   maxLanded: 500, // oldest petals fade away beyond this
   fadeAfterS: 2, // seconds in the air before a petal starts to fade
-  flowerSize: 20, // radius in px
+  flowerSize: 12, // radius in px
 };
 
 const SWITCHES = [
-  { key: "flowerCursor", label: "Flower cursor" },
-  { key: "petals", label: "Falling petals" },
+  { key: "flowerCursor", label: "Flower cursor (on/off)" },
+  { key: "petals", label: "Flower petals (on/off)" },
 ];
 
 // `needs` lists the switches a slider depends on; it's disabled when all are off.
 const SLIDERS = [
   {
     key: "hue",
-    label: "Petal color",
+    label: "Flower color",
     min: 0,
     max: 359,
     step: 1,
@@ -92,7 +92,7 @@ const SLIDERS = [
   },
   {
     key: "spawnEveryMs",
-    label: "Spawn every",
+    label: "Spawn petals every:",
     min: 40,
     max: 600,
     step: 10,
@@ -119,7 +119,7 @@ const SLIDERS = [
   },
   {
     key: "fadeAfterS",
-    label: "Fade while falling after",
+    label: "Fade petals while falling after:",
     min: 1,
     max: FADE_NEVER,
     step: 1,
@@ -245,15 +245,55 @@ export default function FlowerCursor() {
   const [enabled] = useState(effectAllowed);
   const [settings, setSettings] = useState(loadSettings);
   const [open, setOpen] = useState(false);
+  // "Play" mode: a blank playground over the page (nav stays usable) where
+  // clicks only make petals.
+  const [playing, setPlaying] = useState(false);
+  const exitRef = useRef(null);
   // The animation loop reads the latest settings from here every frame.
   const settingsRef = useRef(settings);
   const panelRef = useRef(null);
   const toggleRef = useRef(null);
+  // Set by the animation effect: wipes every petal (air + pile) on demand.
+  const clearPetalsRef = useRef(() => {});
 
   useEffect(() => {
     settingsRef.current = settings;
     saveSettings(settings);
   }, [settings]);
+
+  // While playing: lock the page content behind the playground (the nav stays
+  // fully usable). Escape or following a nav link ends it, and focus goes back
+  // to the cog afterwards.
+  useEffect(() => {
+    if (!playing) return;
+    const root = document.documentElement;
+    const toggle = toggleRef.current;
+    const behind = [
+      document.getElementById("main"),
+      document.querySelector(".footer"),
+    ].filter(Boolean);
+    root.classList.add("petal-play-on");
+    behind.forEach((el) => (el.inert = true));
+    exitRef.current?.focus();
+
+    const stop = () => setPlaying(false);
+    const onKey = (e) => {
+      if (e.key === "Escape" && !document.getElementById("petal-settings"))
+        stop();
+    };
+    const onNav = (e) => {
+      if (e.target instanceof Element && e.target.closest(".nav a")) stop();
+    };
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("click", onNav, true);
+    return () => {
+      root.classList.remove("petal-play-on");
+      behind.forEach((el) => (el.inert = false));
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("click", onNav, true);
+      toggle?.focus({ preventScroll: true });
+    };
+  }, [playing]);
 
   // Close the panel on Escape or a click outside it.
   useEffect(() => {
@@ -336,6 +376,12 @@ export default function FlowerCursor() {
     };
     resize();
 
+    clearPetalsRef.current = () => {
+      falling = [];
+      landed = [];
+      cols.fill(0);
+    };
+
     const colAt = (x) =>
       Math.max(0, Math.min(cols.length - 1, Math.floor(x / COL_W)));
 
@@ -409,6 +455,14 @@ export default function FlowerCursor() {
     const onDown = (e) => {
       mouse.down = true;
       if (!settingsRef.current.petals) return;
+      // No petal puff when clicking the settings themselves.
+      if (
+        e.target instanceof Element &&
+        e.target.closest(
+          ".petal-settings, .petal-settings-toggle, .petal-play__exit",
+        )
+      )
+        return;
       for (let i = 0; i < 6; i++) spawnPetal(e.clientX, e.clientY, true);
     };
     const onUp = () => {
@@ -549,6 +603,7 @@ export default function FlowerCursor() {
 
     return () => {
       cancelAnimationFrame(raf);
+      clearPetalsRef.current = () => {};
       window.removeEventListener("resize", resize);
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerdown", onDown);
@@ -572,6 +627,28 @@ export default function FlowerCursor() {
         className="flower-cursor-canvas"
         aria-hidden="true"
       />
+
+      {playing && (
+        <div
+          className="petal-play"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Petal playground"
+        >
+          <p className="petal-play__hint">
+            Click anywhere to shake loose some petals, and sweep through the
+            pile to toss it.
+          </p>
+          <button
+            ref={exitRef}
+            type="button"
+            className="petal-play__exit"
+            onClick={() => setPlaying(false)}
+          >
+            Done <kbd>Esc</kbd>
+          </button>
+        </div>
+      )}
 
       <button
         ref={toggleRef}
@@ -652,12 +729,36 @@ export default function FlowerCursor() {
 
           <button
             type="button"
-            className="petal-settings__reset"
-            onClick={() => setSettings({ ...DEFAULTS })}
-            disabled={isDefault}
+            className="petal-settings__play"
+            onClick={() => {
+              setOpen(false);
+              setPlaying(true);
+            }}
+            disabled={!settings.petals}
+            title={
+              settings.petals ? undefined : "Turn flower petals on to play"
+            }
           >
-            Reset to defaults
+            <FaPlay aria-hidden="true" /> Play with petals
           </button>
+
+          <div className="petal-settings__actions">
+            <button
+              type="button"
+              className="petal-settings__reset"
+              onClick={() => clearPetalsRef.current()}
+            >
+              Clear all petals
+            </button>
+            <button
+              type="button"
+              className="petal-settings__reset"
+              onClick={() => setSettings({ ...DEFAULTS })}
+              disabled={isDefault}
+            >
+              Reset to defaults
+            </button>
+          </div>
         </div>
       )}
     </>

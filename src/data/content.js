@@ -33,6 +33,7 @@ export const experience = [
   {
     role: "Frontend Developer",
     company: "AXS (Carbonhouse)",
+    companyUrl: "https://www.carbonhouse.com/about/team",
     dates: "May 2025 – Present",
     points: [
       "Develop responsive websites and front-end components with HTML, CSS/SCSS, JavaScript, and PHP.",
@@ -46,6 +47,7 @@ export const experience = [
   {
     role: "Frontend Developer",
     company: "Onward Platforms",
+    companyUrl: "https://infracodebase.com/",
     dates: "Feb 2024 – Feb 2025",
     points: [
       "Built interactive UI components with ReactFlow and Remix to visualize cloud infrastructure configurations in real time.",
@@ -58,6 +60,7 @@ export const experience = [
   {
     role: "Full Stack Web Developer Certification",
     company: "UNC Charlotte",
+    companyUrl: "https://professional.charlotte.edu/",
     dates: "Nov 2022 – Mar 2023",
     points: [
       "Built full-stack MERN applications in teams, including a virtual home management app backed by SQL.",
