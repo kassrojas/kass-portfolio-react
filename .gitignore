@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# compiled Sass output from the editor's Sass watcher (the app imports the .scss)
+src/**/*.styles.css
+*.css.map
+
+# local copy of the previous resume
+src/assets/files/kassandra_lazette_resume-old.pdf

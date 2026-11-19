@@ -1,37 +1,32 @@
-import React from "react";
-// import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home/home.component";
-import Contact from "./components/Contact/contact.component";
-import About from "./components/About/about.component";
-import Portfolio from "./components/Projects/portfolio.component";
-import Header from "./components/Header/header.component";
-import Footer from "./components/footer.component";
-// import ReturnHome from "./components/returnHome.component";
-import "./index.styles.scss";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Work from "./components/Work";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import FlowerCursor from "./components/FlowerCursor";
+import CornerLeaves from "./components/CornerLeaves";
 
-function App() {
+export default function App() {
   return (
     <>
-      <Header />
-      <Home />
-      <About />
-      <Portfolio />
-      <Contact />
+      <CornerLeaves />
+      <a className="skip-link" href="#main">Skip to content</a>
+      <Nav />
+      <main id="main">
+        <Hero />
+        <About />
+        <Experience />
+        <Work />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
       <Footer />
-
-      {/* <Routes>
-        <Route path='kass-portfolio-react/' element={<Header />}>
-          <Route index element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='projects' element={<Portfolio />} />
-          <Route path='contact' element={<Contact />} />
-        </Route>
-        <Route path='*' element={<ReturnHome />}></Route>
-      </Routes>
-      < Footer /> */}
+      <FlowerCursor />
     </>
-  )
-};
-
-
-export default App;
+  );
+}

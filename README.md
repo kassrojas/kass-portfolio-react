@@ -6,7 +6,9 @@
 
 ## Description
 
-This React App highlights several deployed applications built by [Kass Rojas](https://github.com/kassrojas).
+Portfolio for Kassandra Rojas Lazette, a frontend developer. It covers professional experience, live client websites built at AXS (Carbonhouse), and personal projects.
+
+Site content (experience, client work, projects, skills) lives in `src/data/content.js`.
 
 ## Table of Contents
 
